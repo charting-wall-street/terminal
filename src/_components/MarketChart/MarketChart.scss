@@ -1,0 +1,16 @@
+#marketChart {
+
+  position: relative;
+
+  table {
+    border-collapse: collapse;
+
+    canvas {
+      display: block;
+    }
+  }
+
+  #candleChart {
+    cursor: crosshair;
+  }
+}

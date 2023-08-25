@@ -1,0 +1,48 @@
+@import "../../_styles/Colors";
+
+.symbol-list-container {
+  height: calc(100vh - 52px);
+}
+
+.symbol-list {
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100% - 45px);
+
+  .list-header {
+
+    input {
+      margin: $panel-spacing;
+      background: transparent;
+      border: none;
+      padding: 4px;
+      color: white;
+      width: calc(100% - 20px);
+      border-bottom: 1px solid $underline-color;
+      font-size: 0.75rem;
+      outline: none;
+      display: block;
+    }
+  }
+
+  .list-container {
+    overflow-y: auto;
+    width: 100%;
+    min-width: 240px;
+  }
+
+  .list-entry {
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .list-entry:not(:last-child) {
+  }
+
+  .list-entry.active {
+    background-color: #23282f;
+  }
+}

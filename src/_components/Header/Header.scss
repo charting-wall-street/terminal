@@ -1,0 +1,56 @@
+@import "../../_styles/Colors";
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: calc(100% - 2px);
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+  background-color: $background-color;
+
+  justify-content: space-between;
+  font-size: 0.9rem;
+
+  color: #7f8fa6;
+
+  .page-actions {
+  }
+
+  .btn-page-header {
+    border-radius: 4px;
+    display: inline-block;
+    min-width: 80px;
+    padding: 5px 15px;
+    border-color: $borders-color;
+    font-size: 0.75rem;
+    margin: 0 8px 0 0;
+  }
+
+  .btn-page-header.active {
+    border-color: transparent;
+    background-color: $button-active-color;
+  }
+
+  .page-descriptor {
+    align-self: center;
+    display: flex;
+
+    .page-name {
+      padding: 0 1rem;
+      align-self: center;
+    }
+  }
+
+  .user-actions {
+    color: #7f8fa6;
+    padding: 0 1rem;
+    display: flex;
+
+    .user-name {
+      align-self: center;
+    }
+  }
+}

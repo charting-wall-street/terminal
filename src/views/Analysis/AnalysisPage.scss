@@ -1,0 +1,72 @@
+#analysis {
+
+  .asset-list {
+    min-width: 200px;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    canvas {
+      display: block;
+    }
+  }
+
+  #candleChart {
+    cursor: crosshair;
+  }
+
+  .chart-horizontal {
+    display: flex;
+
+    .result-list {
+      flex-grow: 1;
+    }
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 44px);
+
+    .inspector-panel {
+      min-width: 420px;
+      flex-direction: column;
+
+      .body {
+        height: calc(100vh - 94px);
+        overflow-y: auto;
+      }
+    }
+  }
+
+
+  .tools-panel {
+
+    .inner-panel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .tools-panel {
+    min-height: 0;
+
+    .section-results {
+      display: flex;
+      height: 100%;
+
+      .trade-column {
+        padding: 5px;
+        width: calc(100% - 10px);
+        flex-basis: 0;
+        flex-grow: 1;
+        min-height: 0;
+        overflow-y: auto;
+      }
+
+    }
+
+  }
+}

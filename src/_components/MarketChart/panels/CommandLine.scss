@@ -1,0 +1,29 @@
+.cl-container {
+
+  font-size: 0.9rem;
+
+  .row {
+    width: 100%;
+    display: flex;
+  }
+
+  .cl-prefix {
+    padding: 0.5rem;
+  }
+
+  .cl-input {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    color: white;
+    outline: none;
+    width: 50%;
+  }
+
+  .cl-error {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    color: #CAD3C8;
+    flex-grow: 1;
+  }
+}

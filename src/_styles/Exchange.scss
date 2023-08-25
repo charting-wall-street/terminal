@@ -1,0 +1,59 @@
+
+.icon-binance {
+  background-image: url("icons/binance.png");
+}
+
+.icon-unicorn {
+  background-image: url("icons/unicorn.png");
+}
+
+.icon-tether {
+  background-image: url("icons/tether.png");
+}
+
+.icon-futures {
+  background-image: url("icons/futures.png");
+}
+
+#app {
+
+  .symbol-label {
+
+    .symbol-icons {
+      display: inline-block;
+    }
+
+    .symbol-icon {
+      margin-left: 5px;
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      vertical-align: -1px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .symbol-name {
+      display: inline-block;
+      font-size: 0.85rem;
+    }
+
+    .symbol-type {
+      display: inline-block;
+      background-color: #1b1e23;
+      color: #7f8fa6;
+      padding: 1px 4px 1px 4px;
+      margin-left: 5px;
+      border-radius: 5px;
+      font-size: 10px;
+      line-height: normal;
+      vertical-align: 1px;
+    }
+
+  }
+
+  .symbol-label.list-item {
+    display: flex;
+    justify-content: space-between;
+  }
+}

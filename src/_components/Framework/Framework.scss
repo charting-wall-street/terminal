@@ -1,0 +1,128 @@
+@import "../../_styles/Colors";
+
+.panel-container {
+
+  display: flex;
+
+  .panel {
+    padding: $panel-spacing;
+    min-width: 0;
+
+    .inner-panel {
+      height: 100%;
+      border-radius: $panel-radius;
+      background-color: $foreground-color;
+    }
+
+    .panel-title {
+      padding: 0.6rem 0.8rem ;
+      color: $secondary-color;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+  }
+
+}
+
+.panel-container.vertical-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-list {
+
+  .list-item {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .list-item.active {
+    background-color: #1b1e23;
+  }
+}
+
+.panel-input {
+
+  padding: 0.5rem;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #7f8fa6;
+  }
+
+  input, select {
+    -webkit-appearance: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #2f3640;
+    background-color: #1b1e23;
+    padding: 0.5rem;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+}
+
+.panel-container.panel-equal {
+  .panel {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+button {
+  border-radius: $button-radius;
+  margin: 0.5rem;
+  display: block;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #2f3640;
+  outline: none;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #181c21;
+}
+
+.btn-launch {
+  background-image: url("./rocket.svg");
+  padding-right: 38px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  font-size: 0.8rem;
+  background-position: 64px center;
+  border-radius: $button-radius;
+}
+
+.launch-confirm {
+
+  margin: 0.5rem;
+
+  .launch-warning {
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .launch-buttons {
+
+    display: flex;
+    margin: -0.5rem;
+
+    button:first-child {
+      border-color: #17493e;
+      margin-right: 5px;
+    }
+
+    button:last-child {
+      border-color: #5d2020;
+    }
+  }
+}

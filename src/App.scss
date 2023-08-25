@@ -1,0 +1,24 @@
+@import "./_styles/Colors";
+
+.root-container {
+  display: flex;
+}
+
+.page-container {
+  flex-grow: 1;
+  margin: 40px $panel-spacing $panel-spacing 64px;
+}
+
+.main-panel {
+  height: calc(100vh - 45px);
+  display: flex;
+  flex-direction: column;
+}
+
+.error-container {
+  margin: 0.5rem;
+  background-color: #5d2020;
+  border: 1px solid white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}

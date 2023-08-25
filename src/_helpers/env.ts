@@ -1,0 +1,5 @@
+export const KIO_URL = process.env["REACT_APP_KIO_URL"]
+export const INCA_URL = process.env["REACT_APP_INCA_URL"]
+export const SIMAR_URL = process.env["REACT_APP_SIMAR_URL"]
+export const ALGO_URL = process.env["REACT_APP_ALGO_URL"]
+export const ATOMA_URL = process.env["REACT_APP_ATOMA_URL"]

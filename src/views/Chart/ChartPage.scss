@@ -1,0 +1,26 @@
+#realtime {
+
+  .asset-list {
+    min-width: 200px;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    canvas {
+      display: block;
+    }
+  }
+
+  #candleChart {
+    cursor: crosshair;
+  }
+
+  .chart-horizontal {
+    display: flex;
+
+    .result-list {
+      flex-grow: 1;
+    }
+  }
+}

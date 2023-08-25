@@ -1,0 +1,99 @@
+@import "../../../_styles/Colors";
+
+.algorithm-panel {
+
+  padding: 0 10px 5px 10px;
+  height: 100%;
+  overflow-y: auto;
+
+  .algorithm-list {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+
+    td {
+      width: 100%;
+      padding: 5px;
+      font-size: 0.9rem;
+    }
+
+    .algo-entry.active {
+      color: #3fb291;
+    }
+
+    .algo-entry {
+
+      display: flex;
+
+      .algo-title, .algo-status {
+        padding: 8px 0;
+      }
+
+      .algo-actions {
+        display: flex;
+        justify-content: right;
+      }
+
+      .algo-params {
+
+        input, select {
+          -webkit-appearance: none;
+          border-radius: 0;
+          box-sizing: border-box;
+          display: block;
+          border: 1px solid #2f3640;
+          background-color: #1b1e23;
+          padding: 0.5rem;
+          color: white;
+          width: 100%;
+          font-size: 0.65rem;
+        }
+
+      }
+
+      .btn-algo {
+        margin-left: 5px;
+        width: 28px;
+        height: 28px;
+        border-radius: $button-radius;
+        background-size: 16px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #161a25;
+        border: 1px solid rgba(47, 54, 64, 0.5);
+        cursor: pointer;
+      }
+
+      .btn-algo.active {
+        background-color: #2d4929;
+      }
+
+      .btn-algo:hover {
+        background-color: #1f2833;
+      }
+
+      .btn-algo.btn-algo-start {
+        background-image: url("./icons/022-play.svg");
+      }
+
+      .btn-algo.btn-algo-load {
+        background-image: url("./icons/146-download.svg");
+      }
+
+      .btn-algo.btn-algo-download {
+        background-image: url("./icons/146-download.svg");
+      }
+
+      .btn-algo.btn-algo-upload {
+        background-image: url("./icons/145-upload.svg");
+      }
+
+      .btn-algo.btn-algo-refresh {
+        background-image: url("./icons/066-refresh.svg");
+      }
+
+    }
+
+  }
+
+}

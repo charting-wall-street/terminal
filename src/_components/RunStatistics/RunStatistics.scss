@@ -1,0 +1,31 @@
+.statistics-info {
+  display: flex;
+
+
+  div {
+    margin-left: 6px;
+    text-align: right;
+  }
+}
+
+*:not(.active), *:not(.selected) {
+
+  .text-red {
+    color: #c45958;
+  }
+
+  .text-green {
+    color: #3fb291;
+  }
+}
+
+
+.active, .selected {
+  .text-red {
+    color: #ff7675;
+  }
+
+  .text-green {
+    color: #55efc4;
+  }
+}

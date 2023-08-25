@@ -1,0 +1,48 @@
+.windows-container {
+  flex-direction: column;
+
+  .no-chart {
+    align-self: center;
+    text-align: center;
+  }
+
+  .chart-message {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+  }
+
+  h4, .nav-tab {
+    font-weight: normal;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 0.85rem;
+    color: #7f8fa6;
+  }
+
+  h4 {
+    border-bottom: 1px solid #2f3640;
+  }
+
+  .nav-tab.active {
+    background-color: #1b1e23;
+  }
+
+  .window-top {
+    min-height: 517px;
+    border-bottom: 1px solid #2f3640;
+    display: flex;
+  }
+
+  .sub-window-top {
+  }
+
+  .window-bottom {
+    display: flex;
+
+    .sub-window-bottom {
+      min-height: calc(100vh - 692px);
+
+    }
+  }
+}

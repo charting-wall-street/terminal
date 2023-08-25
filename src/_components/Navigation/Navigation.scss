@@ -1,0 +1,53 @@
+@import "../../_styles/Colors";
+
+#navigation {
+  position: fixed;
+  top: 40px;
+  left: $panel-spacing;
+  z-index: 1000;
+  border-radius: $panel-radius;
+  margin: $panel-spacing;
+  background-color: $foreground-color;
+
+  .navigation-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .navigation-item {
+    cursor: pointer;
+    padding: 14px;
+    font-size: 0;
+    text-align: center;
+    display: block;
+    color: #7f8fa6;
+    text-decoration: none;
+    border-radius: $panel-radius;
+
+    .navigation-icon {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .navigation-item.active {
+    .navigation-icon{
+      filter: brightness(200%);
+    }
+    background-color: $button-active-color;
+    color: white;
+  }
+}
+
+
+.tab-navigation {
+
+  display: flex;
+  width: 100%;
+
+  .nav-tab:not(.disabled) {
+    cursor: pointer;
+  }
+}
